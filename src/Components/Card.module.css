@@ -1,0 +1,14 @@
+.Card {
+  width: 30%;
+  max-width: 45rem;
+  background-color: rgb(32, 32, 32);
+  border-radius: 2rem;
+  display: grid;
+  grid-template-rows: 10rem 40rem auto;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}

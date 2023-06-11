@@ -1,0 +1,62 @@
+.title {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title img {
+  height: 3.8rem;
+  display: inline;
+  margin-right: 1.3rem;
+  padding-bottom: 0.7rem;
+}
+
+.cartListDiv::-webkit-scrollbar {
+  display: none;
+}
+.cartListDiv {
+  overflow-y: scroll;
+}
+.totalSection {
+  width: 100%;
+  padding: 5%;
+  -webkit-box-shadow: 1px -7px 16px -4px rgba(0, 0, 0, 0.59);
+  -moz-box-shadow: 1px -7px 16px -4px rgba(0, 0, 0, 0.59);
+  box-shadow: 1px -7px 16px -4px rgba(0, 0, 0, 0.59);
+}
+.upper h2 {
+  font-size: 3rem;
+  color: rgb(235, 235, 235);
+}
+.upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.totalSection button {
+  width: 49%;
+  padding: 1rem 3rem;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  background-color: rgb(58, 58, 58);
+  margin: auto;
+  color: rgb(235, 235, 235);
+}
+.checkoutActions {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.upper h3 {
+  color: gold;
+  font-size: 2rem;
+}
+.totalSection button:hover {
+  transition: 0.2s ease;
+  background: rgb(41, 41, 41);
+  cursor: pointer;
+}

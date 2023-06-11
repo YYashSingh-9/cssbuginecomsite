@@ -1,0 +1,36 @@
+label {
+  position: relative;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: rgb(195, 195, 195);
+  color: rgb(15, 15, 15);
+  font-size: 1.2rem;
+  margin-right: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+input {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+label:hover input ~ .checkmark {
+  border: 0.2rem solid rgb(20, 20, 20);
+}
+label input:checked ~ .checkmark {
+  background-color: rgb(24, 24, 24);
+  color: white;
+}
+.checkmark {
+  position: absolute;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  line-height: 4rem;
+  border: 0.2rem solid transparent;
+}

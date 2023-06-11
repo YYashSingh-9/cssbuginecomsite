@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+.MainDiv {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 100%;
+  margin: 2rem 10rem 10rem 10rem;
+}
+.filter {
+  /* border: 0.7rem solid rgb(54, 54, 54);   */
+  padding: 2rem;
+}
+.title {
+  font-size: 2rem;
+
+  margin-left: 2.4rem;
+}
+.filterDiv {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3rem 2rem 0rem 2rem;
+}
+
+.filterDiv label {
+  position: relative;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: rgb(195, 195, 195);
+  color: rgb(15, 15, 15);
+  font-size: 1.2rem;
+  margin-right: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.filterDiv input {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+.filterDiv label:hover input ~ .checkmark {
+  border: 0.2rem solid rgb(20, 20, 20);
+}
+.filterDiv label input:checked ~ .checkmark {
+  background-color: rgb(24, 24, 24);
+  color: white;
+}
+.checkmark {
+  position: absolute;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  line-height: 4rem;
+  border: 0.2rem solid transparent;
+}
+.info {
+  margin: 1rem 2rem 1rem 2rem;
+  font-size: 1.1rem;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+/* .productGrid li {
+  display: grid;
+  grid-template-rows: 30rem 5rem 5rem 5rem;
+  margin-top: 2rem;
+} */
+@media (max-width: 768px) {
+  .MainDiv {
+    margin: 2rem 0rem 10rem 0rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10%;
+  }
+  .productGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .filter {
+    padding: 0rem;
+    text-align: center;
+  }
+  .filterDiv {
+    justify-content: center;
+  }
+}
